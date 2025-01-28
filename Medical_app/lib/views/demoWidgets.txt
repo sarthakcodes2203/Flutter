@@ -1,0 +1,200 @@
+
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("My App"),
+        backgroundColor: Colors.blue,
+      ),
+
+      // body: Center(
+      //     child: Container(
+      //   height: 200,
+      //   width: 200,
+      //   color: Colors.lightGreen,
+      //   child:Center(child:Text('Hello World',style: TextStyle(
+      //     color: Colors.white,
+      //     fontSize: 34,
+      //     fontWeight: FontWeight.bold,
+      //     backgroundColor: Colors.cyan
+      //     ),), )
+      // ))
+
+      // body: TextButton(      /FlatButton
+      //   child: Text("Click Here"),
+      //   onPressed: () {
+      //     print("Button Clicked!!!");
+      //   },
+      //   onLongPress: () {
+      //     print("Long Pressed!!!");
+      //   },
+      // ),
+
+      // body: ElevatedButton(    /RaisedButton
+      //   child: Text("Click Here"),
+      //   onPressed: () {
+      //     print("Button Clicked!!!");
+      //   },
+      //   onLongPress: () {
+      //     print("Long Pressed!!!");
+      //   },
+      // ),
+
+      // body: OutlinedButton(
+      //   child: Text("Click Here"),
+      //   onPressed: () {
+      //     print("Button Clicked!!!");
+      //   },
+      //   onLongPress: () {
+      //     print("Long Pressed!!!");
+      //   },
+      // ),
+
+      //body:Image.asset('assets/images/dp.jpg'),
+
+      // body:Center(
+      //   child:Container(
+      //     width: 200,
+      //     height: 200,
+      //     child:  Image.asset('assets/images/dp.jpg') ,
+      //   ) 
+      // )
+       
+      // body: InkWell(
+      //   onTap: () {
+      //     print("Tapped");
+      //   },
+      //   onDoubleTap: () {
+      //     print("Double Tapped");
+      //   },
+      //   child: Container(
+      //     width: 200,
+      //     height: 200,
+      //     color: Colors.amber,
+      //     child: Text(
+      //       "Click Here",
+      //       style: TextStyle(fontSize: 22),
+      //     ),
+      //   ),
+      // )
+
+      // body: SingleChildScrollView(
+      //   child: Column(
+      //     children: [
+      //       Container(
+      //         child: SingleChildScrollView(
+      //           scrollDirection: Axis.horizontal,
+      //           child: Row(
+      //             children: [
+      //               Container(
+      //                 margin: EdgeInsets.only(bottom: 12),
+      //                 width: 200,
+      //                 height: 200,
+      //                 color:  Colors.blueGrey,
+      //               ),
+      //               Container(
+      //                 margin: EdgeInsets.only(bottom: 12),
+      //                 width: 200,
+      //                 height: 200,
+      //                 color: Colors.pink,
+      //               ),
+      //               Container(
+      //                 margin: EdgeInsets.only(bottom: 12),
+      //                 width: 200,
+      //                 height: 200,
+      //                 color: Colors.red,
+      //               ),
+      //             ],
+      //           ),
+      //         ),
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.only(bottom: 12),
+      //         height: 200,
+      //         color: Colors.green,
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.only(bottom: 12),
+      //         width: 200,
+      //         height: 200,
+      //         color: Colors.orange,
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.only(bottom: 12),
+      //         width: 200,
+      //         height: 200,
+      //         color: Colors.black,
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.only(bottom: 12),
+      //         width: 200,
+      //         height: 200,
+      //         color: Colors.black,
+      //       ),
+      //       Container(
+      //         margin: EdgeInsets.only(bottom: 12),
+      //         width: 200,
+      //         height: 200,
+      //         color: Colors.black,
+      //       )
+      //     ],
+      //   ),
+      // )
+
+      // body: ListView(
+      //   scrollDirection: Axis.horizontal,
+      //   reverse: true,
+      //   children: [
+      //     Text("One"),
+      //     Text("Two"),
+      //     Text("Three"),
+      //     Text("Four"),
+      //     Text("Five"),
+      //   ],
+      // )
+
+      var arrList = ['One', 'Two', 'Three', 'Four', 'Five'];
+      // body: ListView.builder(
+      //   itemBuilder: (context, index) {
+      //     return Text(arrList[index]);
+      //   },
+      //   itemCount: arrList.length,
+      //   itemExtent: 50,
+      // )
+      // body: ListView.separated(
+      //   itemBuilder: (context, index) {
+      //     return Text(arrList[index]);
+      //   },
+      //   itemCount: arrList.length,
+      //   separatorBuilder: (context, index) {
+      //     return Divider(
+      //       height: 40,
+      //       thickness: 5,
+      //     );
+      //   },
+      // )
+
+      // body: GridView.count(
+      //   crossAxisCount: 2,
+      //   mainAxisSpacing: 20,
+      //   crossAxisSpacing: 10,
+      //   children: [
+          
+      //     Image.network(
+      //         'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+      //     Image.network(
+      //         'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+      //   ],
+      // ),
+
+      // body: Card(
+      //   child: Padding(
+      //     padding: EdgeInsets.all(20),
+      //     child: Text("Sarthak"),
+      //   ),
+      //   elevation: 12,
+      //   shadowColor: Color.fromARGB(255, 255, 0, 0),
+      // ),
+
+        
+    );
+  }

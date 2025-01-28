@@ -1,0 +1,580 @@
+## WHATSAPP>>>
+
+
+import 'package:flutter/material.dart';
+
+class Splashscreen extends StatefulWidget {
+  const Splashscreen({super.key});
+
+  @override
+  State<Splashscreen> createState() => _SplashscreenState();
+}
+
+class _SplashscreenState extends State<Splashscreen> {
+  @override
+Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("myApp"),
+        backgroundColor: Colors.blue,
+      ),
+      body: ListView(
+        children: [
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Container(
+            height: 95,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Card(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  //Left-Right
+                  children: [
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: NetworkImage(
+                          'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            width: MediaQuery.of(context).size.width * 0.65,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              crossAxisAlignment: CrossAxisAlignment.end,
+                              children: [
+                                Flexible(
+                                  flex: 4,
+                                  child: Text("Sarthak"),
+                                ),
+                                Flexible(flex: 1, child: Text('12:00'))
+                              ],
+                            ),
+                          ),
+                          Container(
+                            margin: EdgeInsets.only(left: 20),
+                            child: Text("Hey this is a message"),
+                          ),
+                        ]),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## INSTAGRAM>>>
+
+import 'package:flutter/material.dart';
+
+class Splashscreen extends StatefulWidget {
+  const Splashscreen({super.key});
+
+  @override
+  State<Splashscreen> createState() => _SplashscreenState();
+}
+
+class _SplashscreenState extends State<Splashscreen> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("myApp"),
+        backgroundColor: Colors.blue,
+      ),
+      body: ListView.builder(
+          itemCount: 10,
+          itemBuilder: (context, position) {
+            return Card(
+              child: Padding(
+                padding: const EdgeInsets.all(16.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 20,
+                          backgroundImage: NetworkImage(
+                              'https://tse2.mm.bing.net/th?id=OIP.nOsg7n7x3wOGlh3qoJIWHQHaEF&pid=Api&P=0&h=220'),
+                        ),
+                        Container(
+                          margin: EdgeInsets.only(left: 10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Sarthak',
+                                style: TextStyle(
+                                  fontSize: 20,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                              Text(
+                                'Song (Over Slowed + Reverb)',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Container(
+                      margin: EdgeInsets.only(top: 18),
+                      child: Text(
+                        'Post Caption abcdef',
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Image.asset('assets/images/dp.jpg'),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Icon(
+                          Icons.favorite,
+                        ),
+                        Icon(
+                          Icons.comment,
+                        ),
+                        Icon(
+                          Icons.send,
+                        ),
+                        // SizedBox(width: 255.0),
+                        Spacer(),
+                        Icon(
+                          Icons.save_alt,
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            );
+          }),
+    );
+  }
+}
+
