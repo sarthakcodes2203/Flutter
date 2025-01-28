@@ -1,0 +1,9 @@
+Check downloaded Android emulators--
+>emulator -list-avds
+
+
+
+Create a .bat file consisting these--
+>cd C:\Users\tarasankar\AppData\Local\Android\Sdk\tools
+>emulator @Pixel_3a_API_34
+(change directory to emulator location and downloaded Android emulator)
