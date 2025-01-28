@@ -1,0 +1,153 @@
+For creating new FLUTTER project>>
+flutter create  demoproject1
+>without any capital alphabet
+
+For creating new DART project>>
+dart create  dart_application_1
+>without any capital alphabet
+
+
+For platform specification>>
+flutter create --platforms android my_app
+
+
+Steps:-(my_app)>>>
+
+1.Create Folders in 'lib' folder-
+>constants , controllers , models , providers , repository , routing , viewmodel , views , widgets .
+
+2.Set icon-
+>Choose icon from [https://www.flaticon.com/] and download as .png .
+>Drop the .png file in [https://www.appicon.co/] and 'Generate' to download the zip file then extract them.
+>Replace the folders in [android/app/src/main/res/mipmap-..] by the downloaded folders of unzipped folder.
+
+3.Connect mobile using "VYSOR"-
+>Developer options in mobile-ON
+>USB debugging-ON
+
+4.Installation in mobile (For Testing)-
+>run  '''flutter run''' 
+in terminal while in same directory as the project (Here, my_app)
+
+5.Create the layouts in dart files inside "views" folder and see them by adding this in the routes of splash screen class :        
+>MaterialPageRoute(builder: (context) => const <nextScreen>()),
+
+6.For adding media -
+>Create an 'assets' folder inside 'my_app' folder .
+>Drop the images/videos in subfolders inside 'assets' .
+>Inside 'pubspec.yaml' file add the ' - assets/images/ ' under assets section.
+(line 62 or "  # To add assets to your application, add an assets section, like this: " under this label)
+>Then add the image using 'Image.asset(location)' attribute.
+
+6B.For adding Google maps -
+>Inside terminal of project directory, run "flutter pub add google_maps_flutter".
+>Import Maps in that file, by "import 'package:google_maps_flutter/google_maps_flutter.dart';".
+>Use 'GoogleMap' widget for using.
+
+7.For enabling routing between the screens, 
+
+A. Create a 'routes.dart' in the routing folder with a 'Routes' class and initialize the screen-classes as string variables after importing the file -
+>String <variable> = <class>().routeName;
+EX-String splashScreen = Splashscreen().routeName;
+and, add this inside the screen-class as variables - 
+>String routeName="/<variable>";
+EX-String routeName="/splashScreen";
+
+B. Inside the main.dart, add an initial route for opening the first displaying screen -
+>initialRoute: Routes().<variableOfFirstScreen>,
+EX-initialRoute: Routes().splashScreen,
+
+C. Inside the main.dart, add the routes of other screen using their pre-initialized variables -
+>routes: {
+Routes().<variable>: (context) => <class>(),
+EX-Routes().splashScreen: (context) => Splashscreen(),
+}
+
+D. Add this for handling redirect to next screen -
+>Navigator.pushNamedAndRemoveUntil(
+context,
+Routes().<variableOfNextScreen>,
+EX-Routes().secondSplashScreen,
+(route) => false,
+);
+
+8.For Installing app as .apk file -
+run '''flutter build apk''' 
+The apk gets installed in the path- "project\build\app\outputs\apk\release"
+
+
+
+
+
+
+
+9.For Connecting to firebase database:--
+::https://www.youtube.com/watch?v=fxDusoMcWj8&list=PL5jb9EteFAODpfNJu8U2CMqKFp4NaXlto&index=14
+
+A: Install or check nodeJS version
+
+B: Create new project in firebase console
+
+C: Click on flutter icon inside the project screen and inside "Add firebase to flutter", go to firebaseCLI>npm and run commands-
+(if first time) npm install -g firebase-tools
+(must) firebase login
+then press 'n' and login using google acc
+
+C: Run 'dart pub global activate flutterfire_cli' from firebase console
+
+D: Run 'flutterfire configure --project=login-app-2024' from firebase console
+-Choose platforms
+-Give a package name, eg- com.yourname.loginapp2024(same as namespace form 'android/app/build.gradle'
+
+E. Resolve issue of importing in newly created file 'lib/firebase_options.dart' by flutter pub add firebase_core
+
+
+F. In console, click on 'Build/Firestore Database/Create database'
+
+
+ 
+Steps to do firebase authentication in flutter.>>>
+-Enable Email Option in Firebase Console
+-Add firebase_auth dependency
+-Configure Firebase in Main.dart
+-Get email and password from Text fields
+-Add logic in Signup Controller
+-Create Authentication Repository Controller
+-Create SignupWithEmaiIAndPassword()
+-Create SignInWithEmaiIAndPassword()
+-Create Logout()
+
+
+(Not possible without setting up a billing account in firebase)>>>
+O.1 SETUP
+-Enable phone number authentication in firebase console
+-Add SHA-I & SHA-256 in Firebase Console
+>Open cmd with 'cd C:\Users\tarasankar\.android', ensuring the presence of 'debug.keystore' here.
+>Run 'keytool -list -v -keystore "C:\Users\tarasankar\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android'
+>Copy the values available as SHA1 and SHA256 and paste them in 'Add fingerprints' which is in "Project settings"
+-Saftey Net Setup - Enable Android Device Verification
+O.2 CODING
+-Create Authentication Repository to perform Auth LOGIC
+-Create VerifyOTP() method in the same repository
+-Cet the user entered phone number and pass it to Auth Repository t Send SMS
+-Recieve OTP from user or perform Automatic Action.
+
+
+
+
+Store all user data to firestore where stored as collection/document&fields>>>
+- Create a userModel for fields with their constructor for the data to be fetched
+- Convert the field variable to tojson() format
+- Create a userRepository for database operations
+::The new datas are stored as a new document inside the 'firestore database' section
+
+
+
+
+Fetch data from cloud firestore>>>
+-Create a factory inside userModel for the data fields
+-Add query for data collection inside Userrepository
+-Update UI for output
+
+
+
