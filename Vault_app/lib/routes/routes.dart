@@ -1,0 +1,43 @@
+import 'package:pro_vault/views/account.dart';
+import 'package:pro_vault/views/bottomBar.dart';
+import 'package:pro_vault/views/calendar.dart';
+import 'package:pro_vault/views/changePassword.dart';
+import 'package:pro_vault/views/forgotPassword.dart';
+import 'package:pro_vault/views/location.dart';
+import 'package:pro_vault/views/logIn.dart';
+import 'package:pro_vault/views/notes.dart';
+import 'package:pro_vault/views/notes_AddEdit.dart';
+import 'package:pro_vault/views/notifications.dart';
+import 'package:pro_vault/views/orderDetails.dart';
+import 'package:pro_vault/views/profile.dart';
+import 'package:pro_vault/views/profile_Edit.dart';
+import 'package:pro_vault/views/setPassword.dart';
+import 'package:pro_vault/views/settings.dart';
+import 'package:pro_vault/views/signUp.dart';
+import 'package:pro_vault/views/splashScreen.dart';
+import 'package:pro_vault/views/timeClock.dart';
+import 'package:pro_vault/views/verification.dart';
+import 'package:pro_vault/views/workOrder.dart';
+
+class Routes {
+  String splashScreen = Splashscreen().routeName;
+  String account = Account().routeName;
+  String bottomBar = Bottombar().routeName;
+  String calender = Calendar().routeName;
+  String changePassword = Changepassword().routeName;
+  String forgotPassword = Forgotpassword().routeName;
+  String location = Location().routeName;
+  String logIn = Login().routeName;
+  String notes_AddEdit = NotesAddEdit().routeName;
+  String notes = Notes().routeName;
+  String notifications = Notifications().routeName;
+  String orderDetails = Orderdetails().routeName;
+  String profile_Edit = ProfileEdit().routeName;
+  String profile= Profile().routeName;
+  String setPassword= Setpassword().routeName;
+  String settings= Settings().routeName;
+  String signUp= Signup().routeName;
+  String timeClock= Timeclock().routeName;
+  String verification= Verification().routeName;
+  String workOrder= Workorder().routeName;
+}
